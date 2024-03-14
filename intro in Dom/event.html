@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<label for="us1">username</label>    <input type="text" id="us1">
+<label for="us2">password</label>
+    <input type="password" id="us2">
+    <button id="8937">done</button>
+    <script>
+        
+    document.getElementById("8937").addEventListener('click', function (event) {
+    event.preventDefault();
+    let us1 = document.getElementById("us1").value;
+    let us2 = document.getElementById("us2").value;
+    if (us1 === 'fhd' && us2 === 'fhd') {
+        localStorage.setItem('us1', us1)
+        window.location.href = 'index.html'
+    }else{
+        alert("username or password is incorrect")
+    }
+})
+    </script>
+</body>
+</html>
